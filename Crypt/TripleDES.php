@@ -57,7 +57,7 @@
 /**
  * Include Crypt_DES
  */
-require_once('DES.php');
+require_once(dirname( __FILE__ ).'/DES.php');
 
 /**
  * Encrypt / decrypt using inner chaining
