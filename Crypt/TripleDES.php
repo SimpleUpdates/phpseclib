@@ -57,7 +57,7 @@
 /**
  * Include Crypt_DES
  */
-require_once('DES.php');
+require_once(dirname( __FILE__ ).'/DES.php');
 
 /**
  * Encrypt / decrypt using inner chaining
@@ -395,7 +395,7 @@ class Crypt_TripleDES {
                 }
 
                 if (!class_exists('Crypt_Hash')) {
-                    require_once('Crypt/Hash.php');
+                    require_once(dirname( __FILE__ ).'/Hash.php');
                 }
 
                 $i = 1;

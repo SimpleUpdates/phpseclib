@@ -71,32 +71,32 @@
  *
  * Used to do RSA encryption.
  */
-require_once('Math/BigInteger.php');
+require_once(dirname( __FILE__ ).'/../Math/BigInteger.php');
 
 /**
  * Include Crypt_Null
  */
-//require_once('Crypt/Null.php');
+//require_once(dirname( __FILE__ ).'/../Crypt/Null.php');
 
 /**
  * Include Crypt_DES
  */
-require_once('Crypt/DES.php');
+require_once(dirname( __FILE__ ).'/../Crypt/DES.php');
 
 /**
  * Include Crypt_TripleDES
  */
-require_once('Crypt/TripleDES.php');
+require_once(dirname( __FILE__ ).'/../Crypt/TripleDES.php');
 
 /**
  * Include Crypt_RC4
  */
-require_once('Crypt/RC4.php');
+require_once(dirname( __FILE__ ).'/../Crypt/RC4.php');
 
 /**
  * Include Crypt_Random
  */
-require_once('Crypt/Random.php');
+require_once(dirname( __FILE__ ).'/../Crypt/Random.php');
 
 /**#@+
  * Encryption Methods
@@ -1174,7 +1174,7 @@ class Net_SSH1 {
     {
         /*
         if (!class_exists('Crypt_RSA')) {
-            require_once('Crypt/RSA.php');
+            require_once(dirname( __FILE__ ).'/Crypt/RSA.php');
         }
 
         $rsa = new Crypt_RSA();
