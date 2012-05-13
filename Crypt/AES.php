@@ -66,7 +66,7 @@
 /**
  * Include Crypt_Rijndael
  */
-require_once 'Rijndael.php';
+require_once(dirname( __FILE__ ).'/Rijndael.php');
 
 /**#@+
  * @access public
